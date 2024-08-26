@@ -1,0 +1,29 @@
+img{
+    border-radius: 7px;
+    margin-left: 400px;
+}
+div{
+    display: inline;
+}
+.textdecoy{
+    border: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-spacing: 10px;
+    background-color: red;
+}
+.textdecoy2{
+    border: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: green;
+}
+.textdecoy3{
+    border: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: blue;
+}

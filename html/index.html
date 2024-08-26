@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/Gomycode classes/sass/index.css"> -->
+    
+</head>
+<body>
+    <!-- <div id="main">
+        <p id="child1"></p>
+        <p id="child2"></p>
+    </div> -->
+    <form name="quizForm" onsubmit="return validateQuiz(event)">
+        <label>Question 1</label><br>
+        <input type="radio" id="q1option1" name="q1" value="option1"> Option 1<br>
+        <input type="radio" id="q1option2" name="q1" value="option2"> Option 2<br>
+        <input type="radio" id="q1option3" name="q1" value="option3"> Option 3<br>
+    
+        <label>Question 2</label><br>
+        <input type="radio" id="q2option1" name="q2" value="option1"> Option 1<br>
+        <input type="radio" id="q2option2" name="q2" value="option2"> Option 2<br>
+        <input type="radio" id="q2option3" name="q2" value="option3"> Option 3<br>
+    
+        <label>Question 3</label><br>
+        <input type="radio" id="q3option1" name="q3" value="option1"> Option 1<br>
+        <input type="radio" id="q3option2" name="q3" value="option2"> Option 2<br>
+        <input type="radio" id="q3option3" name="q3" value="option3"> Option 3<br>
+    
+        <button type="submit">Submit</button>
+    </form>
+    
+    <script>
+        // var parentElem = document.getElementById('main');
+        // var childElem = document.getElementById('child2');
+        // console.log('Initial parent', parentElem )
+        
+    
+        // parentElem.removeChild(childElem);
+        // console.log("Final parent ", childElem)
+    
+        function validateQuiz(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Correct answers
+    const correctAnswers = {
+        q1: 'option2',
+        q2: 'option1',
+        q3: 'option3'
+    };
+
+    // User selections
+    let score = 0;
+    let totalQuestions = Object.keys(correctAnswers).length;
+
+    // Loop through each question to check the answer
+    for (let question in correctAnswers) {
+        const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+        if (selectedOption && selectedOption.value === correctAnswers[question]) {
+            score++;
+        }
+    }
+
+    // Display the score
+    alert(`You scored ${score} out of ${totalQuestions}.`);
+}
+</script>
+</body>
+</html>

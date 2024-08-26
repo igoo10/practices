@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #a8d0e6;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            border: solid 30px#329cff;
+            background-color: #24305e;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            color: #a8d0e6;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-container label {
+            color: #a8d0e6;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px 10px 10px 0;
+            margin-bottom: 10px;
+            border: none;
+            border-bottom: 2px solid white;
+            background: none;
+            color: white;
+            outline: none;
+        }
+
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #a8d0e6;
+            border: none;
+            border-radius: 5px;
+            color: #24305e;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .register-text {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .register-text a {
+            color:#a8d0e6 ;
+            text-decoration: none;
+        }
+
+        form {
+            border: solid 30px #24305e;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Please Login</h2>
+        <form>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Login">
+        </form>
+        <p class="register-text">Don't have an account? <a href="#">Register</a></p>
+    </div>
+</body>
+</html>

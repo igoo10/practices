@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        input{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Fill in your details</h2>
+        <form>
+            <label>First-Name</label>
+            <input type="text" id="firstname" name="firstname">
+            <label>Last-Name</label>
+            <input type="text" id="lastname" name="lastname">
+            <label>Country</label>
+            <input type="text" id="country" name="country">
+            <label>DATE OF BIRTH</label>
+            <input type="number" id="dob" name="dob">
+            <label>Address</label>
+            <input type="date" id="address" name="address">
+            <label>Phone-Number</label>
+            <input type="number" id="phonenumber" name="phonenumber">
+            <label>State of Origin</label>
+            <input type="text" id="stateoforigin" name="stateoforigin">
+
+            <label>Password</label>
+            <input type="password" id="password" name="password">
+
+            <label for="course">HACKERSPACE</label>
+            <select id="hackerspace">
+            <option value="null" name="">--SELECT HACKERSPACE-- </option>
+            <option  id="yaba-space" value='yaba'>Yaba Hackerspace </option>
+            <option  id="ikeja-space" value="ikeja">Ikeja Hackerspace</option>
+            <option  id="festac-space" value="festac">Festac Hackerspace</option>
+            <option  id="abuja-space" value="abuja">Abuja Hackerspace</option>
+            <input type="submit" name="submit" id="btn">
+        </select>
+        </form>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+</html>

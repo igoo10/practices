@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Account-Fetcher</title>
+</head>
+<style>
+    body{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: darkgrey;
+    }
+    .container{
+    max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+    }
+    h1 {
+  text-align: center;
+  color: #333;
+}
+.account-container{
+    margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.accountDetails-holder{
+    margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+</style>
+
+<body>
+    <div class="container">
+        <h1>FIND ACCOUNT DETAILS</h1>
+        <div class="account-container">
+            <label> <b>Account Number</b></label>
+            <input type="text" id="accountBox" placeholder="search by Account number" maxlength="10">
+        </div>
+    <button id="btn">Fetch Account Details</button>
+    <div id="accountDetailsHolder" class="accountDetails-holder"></div>
+    </div>
+    <script src="../js/user-details2.js"></script>
+
+    
+</body>
+</html>
