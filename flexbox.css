@@ -1,0 +1,80 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#dfdcdf;
+    padding: 10px;
+    border-radius: 20px;
+    height: 100px;
+    /* gap: 5px;   */
+}
+nav .logo{
+    width:10%;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 20px;
+    margin: 2%;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 70px;
+  }
+
+  nav a:hover{
+    background-color:#124074;
+  }
+
+.newarrivals {
+    background-color: #071736;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0px;
+    
+    
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    align-content:center;
+    flex-direction: row;
+    padding: 20px 10px;
+    gap: 40px;
+    
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    ;
+    
+}
+
+
+img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+p{
+text-align: center;
+font-style: italic;
+font-weight:bold;
+}
